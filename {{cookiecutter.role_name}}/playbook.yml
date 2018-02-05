@@ -1,0 +1,24 @@
+- hosts: all
+  gather_facts: False
+  tasks:
+  - name: install ansible prerequisite (python)
+    raw: test -e /usr/bin/python || ( apt update -y && apt install python-minimal -y && apt install python-apt)
+
+{% if cookiecutter.has_files == 'yes' -%}
+- name: run the main roles-{{cookiecutter.target_host}}
+  hosts: {{cookiecutter.target_host}}
+  roles:
+    - role: entercloudsuite.backup
+      file: true
+      dir_list: find /home -maxdepth 2 -name public_html -print -type d | tr "\/" " " | awk '{print "/"$1"/"$2}'
+      mysql: false
+{% endif %}  
+
+{% if cookiecutter.has_mysql == 'yes' -%}
+- name: run the main roles-{{cookiecutter.target_host}}
+  hosts: {{cookiecutter.target_host}}
+  roles:
+    - role: entercloudsuite.backup
+      file: false
+      mysql: true
+{% endif %}   

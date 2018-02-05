@@ -1,0 +1,9 @@
+---
+# vars
+
+os_api: "{{cookiecutter.api_url}}"
+os_region: "{{cookiecutter.region_name}}"
+os_project_id: "{{cookiecutter.project_id}}"
+os_project: "{{cookiecutter.project_name}}"
+os_user: "{{cookiecutter.user_name}}"
+os_password: "{{cookiecutter.password}}"

@@ -1,0 +1,3 @@
+---
+- src: entercloudsuite.backup
+  version: {{cookiecutter.role_version}}
