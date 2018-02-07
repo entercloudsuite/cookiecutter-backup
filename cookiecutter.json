@@ -1,6 +1,6 @@
 {
     "role_name": "backup",
-    "role_version": "1.0.0",
+    "role_version": "1.0.1",
     "api_url": "https://api.entercloudsuite.com/v2.0",
     "region_name": "nl-ams1",
     "project_id": "",
