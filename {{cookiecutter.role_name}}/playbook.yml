@@ -10,7 +10,7 @@
   roles:
     - role: entercloudsuite.backup
       file: true
-      dir_list: find /home -maxdepth 2 -name public_html -print -type d | tr "\/" " " | awk '{print "/"$1"/"$2}'
+      dir_list: 
       mysql: false
 {% endif %}  
 

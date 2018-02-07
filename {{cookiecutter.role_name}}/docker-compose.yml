@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+ ansible:
+   build: .
+   image: ansible
+   volumes:
+       - .:/root/src
+   working_dir: /root/src/

@@ -8,6 +8,9 @@
     "user_name": "{{cookiecutter.project_name}}",
     "password": "",
     "target_host": "",
+    "target_ip": "",
+    "target_user": "ubuntu",
+    "target_key": "iac.pem",
     "has_files": ["no", "yes"],
     "has_mysql": ["no", "yes"]
 }
