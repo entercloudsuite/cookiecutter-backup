@@ -12,5 +12,16 @@
     "target_user": "ubuntu",
     "target_key": "iac.pem",
     "has_files": ["no", "yes"],
-    "has_mysql": ["no", "yes"]
+    "dir_list": "",
+    "has_mysql": ["no", "yes"],
+    "customer": "",
+    "customer_max_size": "", 
+    "full_every": "7D", 
+    "retention": "7D", 
+    "retentiondb": "7", 
+    "influxDB_url": "", 
+    "influxDB_port": "8087", 
+    "influxDB_DatabaseName": "", 
+    "influxDB_Username": "", 
+    "influxDB_Password": ""
 }

@@ -10,7 +10,7 @@
   roles:
     - role: entercloudsuite.backup
       file: true
-      dir_list:
+      dir_list: {{cookiecutter.dir_list}}
 {% endif %}  
 
 {% if cookiecutter.has_mysql == 'yes' -%}
