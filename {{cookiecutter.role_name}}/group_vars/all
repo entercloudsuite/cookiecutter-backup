@@ -20,5 +20,5 @@ influxDB_url: "{{cookiecutter.influxDB_url}}"
 influxDB_port: "{{cookiecutter.influxDB_port}}" 
 influxDB_DatabaseName: "{{cookiecutter.influxDB_DatabaseName}}"
 influxDB_Username: "{{cookiecutter.influxDB_Username}}"
-influxDB_Password: "{{cookiecutter.Password}}"
+influxDB_Password: "{{cookiecutter.influxDB_Password}}"
 
