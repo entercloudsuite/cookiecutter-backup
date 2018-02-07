@@ -10,8 +10,7 @@
   roles:
     - role: entercloudsuite.backup
       file: true
-      dir_list: 
-      mysql: false
+      dir_list:
 {% endif %}  
 
 {% if cookiecutter.has_mysql == 'yes' -%}
@@ -19,6 +18,5 @@
   hosts: {{cookiecutter.target_host}}
   roles:
     - role: entercloudsuite.backup
-      file: false
       mysql: true
 {% endif %}   

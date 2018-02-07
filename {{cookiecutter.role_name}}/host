@@ -1,2 +1,2 @@
 [{{cookiecutter.target_host}}]
-{{cookiecutter.target_ip}}      ansible_connection=ssh        ansible_user={{cookiecutter.target_user}} ansible_ssh_private_key_file=/files/{{cookiecutter.target_key}} ansible_become=true
+{{cookiecutter.target_ip}}      ansible_connection=ssh        ansible_user={{cookiecutter.target_user}} ansible_ssh_private_key_file={{cookiecutter.target_key}} ansible_become=true
