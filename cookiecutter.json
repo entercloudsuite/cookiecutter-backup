@@ -15,7 +15,7 @@
     "dir_list": "",
     "has_mysql": ["no", "yes"],
     "customer": "",
-    "customer_max_size": "", 
+    "customer_maxsize": "", 
     "full_every": "7D", 
     "retention": "7D", 
     "retentiondb": "7", 
